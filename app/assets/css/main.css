@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+:root,
+html {
+
+  /* Brand Colors */
+  --PRIMARY-COLOR: #1e40af;
+    --ACCENT-COLOR: #10b981;
+
+  /* Blue Shades */
+  --PRIMARY-COLOR-SHADE-1: #dbeafe;
+    --PRIMARY-COLOR-SHADE-2: #bfdbfe;
+    --PRIMARY-COLOR-SHADE-3: #93c5fd;
+    --PRIMARY-COLOR-SHADE-4: #60a5fa;
+    --PRIMARY-COLOR-SHADE-5: #3b82f6;
+    --PRIMARY-COLOR-SHADE-6: #2563eb;
+    --PRIMARY-COLOR-SHADE-7: #1d4ed8;
+    --PRIMARY-COLOR-SHADE-8: #1e40af;
+    --PRIMARY-COLOR-SHADE-9: #1e3a8a;
+
+  /* Emerald Accent */
+  --ACCENT-COLOR-SHADE-1: #d1fae5;
+    --ACCENT-COLOR-SHADE-2: #a7f3d0;
+    --ACCENT-COLOR-SHADE-3: #6ee7b7;
+    --ACCENT-COLOR-SHADE-4: #34d399;
+    --ACCENT-COLOR-SHADE-5: #10b981;
+    --ACCENT-COLOR-SHADE-6: #059669;
+    --ACCENT-COLOR-SHADE-7: #047857;
+
+  /* Neutral Colors */
+  --SLATE-GRAY: #64748b;
+  --OFF-WHITE: #f8fafc;
+
+  /* Text Colors */
+  --PRIMARY-TEXT-COLOR: #1e293b;
+  --SECONDARY-TEXT-COLOR: #64748b;
+
+  /* Fonts */
+  --FONT-BODY: "Inter", sans-serif;
+  --FONT-HEADING: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--FONT-BODY);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--FONT-HEADING);
+  font-weight: 600;
+}
+
+body {
+  top: 0px !important;
+}
+
+a {
+  text-decoration: none;
+  color: var(--SLATE-GRAY);
+  /* Changed from --PRIMARY-TEXT-COLOR */
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--PRIMARY-COLOR);
+  /* Changed to primary color on hover */
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
